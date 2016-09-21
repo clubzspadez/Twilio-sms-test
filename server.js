@@ -2,6 +2,7 @@ var http = require('http');
 var fs = require('fs');
 var formidable = require("formidable");
 var util = require('util');
+var port=Number(process.env.PORT || 3000)
 
 var server = http.createServer(function (req, res) {
     if (req.method.toLowerCase() == 'get') {
@@ -63,5 +64,5 @@ function sendMessage(name, number, message){
 
 
 
-server.listen(1185);
-console.log("server listening on 1185");
+server.listen(port);
+console.log("server listening on " + port);
