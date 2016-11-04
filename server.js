@@ -48,7 +48,7 @@ function processAllFieldsOfTheForm(req, res) {
 
 
 var client = require('twilio')(
-  'AC08dac3a8d8724dfd41ffc20d90cf9930', '4612bbd8f2b52ef5be56385f00f7c788'
+  '___ENV', '_____ENV'
 );
 
 function sendMessage(name, number, message){
