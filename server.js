@@ -21,6 +21,7 @@ function displayForm(res) {
         });
         res.write(data);
         res.end();
+
     });
 }
 
